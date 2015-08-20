@@ -28,7 +28,9 @@
       <td ng-repeat="column in columns">
         <div>
           <input ng-model="cells[column+row]"></input>
-          <div ng-bind="compute(column+row)"
+          <!-- div ng-bind="compute(column+row)"
+               class="output"></div -->
+          <div ng-bind="cells[column+row]"
                class="output"></div>
         </div>
       </td>
